@@ -27,9 +27,16 @@ Isso irá baixar o container para sua máquina.
 
 docker run --name desafio_app -p 5057:5057 --rm desafio_app:final
 
-Este comando irá montar corretamente o ambiente e redirecionar as portas necessárias.
-API
+Este comando irá montar corretamente o ambiente e redirecionar as portas necessárias. A partir deste comando, o container estará rodando e pronto para receber chamadas, feitas através do link: http://localhost:5057. 
+
+Para fazer o setup do banco de dados e coletar as informações necessárias, você deve acessar o caminho http://localhost:5057/start, que irá preencher o banco de dados.
+
+Alternativamente, é oferecida na imagem o banco de dados preenchido (arquivo hts.json).
+
+# API
 
 A API REST contida neste sistema possui uma série de funções, que estão documentadas neste link: https://documenter.getpostman.com/view/7498137/T17J7mda?version=latest
+
+A coleção assume que o container esteja rodando localmente com as informações oferecidas neste documento.
 
 Para obter uma coleção Postman desta API, use este link: https://www.getpostman.com/collections/bfce78333f28831c409f
