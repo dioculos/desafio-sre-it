@@ -6,6 +6,8 @@ WORKDIR /home/desafio_app
 
 COPY requirements.txt .
 
+COPY hts.json .
+
 #Instalar as livrarias C necessárias pra instalar todos os requerimentos corretamente
 RUN apk add build-base
 
