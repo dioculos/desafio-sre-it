@@ -33,7 +33,13 @@ Para fazer o setup do banco de dados e coletar as informações necessárias, vo
 
 Alternativamente, é oferecida na imagem o banco de dados preenchido (arquivo hts.json).
 
-Para acessar o Kibana e poder visualizar os logs gerados pela aplicação, acesse o caminho: https://localhost:5601/, com as seguintes credenciais:
+Para acessar o Kibana e poder visualizar os logs gerados pela aplicação, é necessário primeiramente montar e iniciar o container com o sistema de monitoramento. Isso pode ser feito usando os seguintes comandos:
+
+cd elastdocker
+
+make setup & make all
+
+Para acessar o Elastic, acesse o caminho: https://localhost:5601/, com as seguintes credenciais:
 
 username: elastic
 password: changeme
